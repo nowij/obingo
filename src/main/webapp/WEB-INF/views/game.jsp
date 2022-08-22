@@ -8,7 +8,7 @@
     <div class="rule">
         게임 설명 및 조작법 설명
     </div>
-    <button>나가기</button>
+    <button onclick="goPage();">나가기</button>
 </div>
 <div class="game_wrap">
     <div class="subject">
@@ -71,4 +71,9 @@
     </div>
 </div>
 </body>
+<script>
+    function goPage() {
+        location.replace("main.do");
+    }
+</script>
 </html>
