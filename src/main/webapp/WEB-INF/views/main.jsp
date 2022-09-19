@@ -49,11 +49,17 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-    function goPage() {
+    function goPage(no) {
         let form = document.createElement('form');
         form.setAttribute('method','post');
         form.setAttribute('action','game.do');
         document.body.appendChild(form);
+
+        let input = document.createElement("input");
+        input.setAttribute("type", "hidden");
+        input.setAttribute("rmSeqNo", no);
+
+        form.appendChild(input);
         form.submit();
     }
 
